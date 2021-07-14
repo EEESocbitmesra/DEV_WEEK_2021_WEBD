@@ -1,0 +1,59 @@
+/* CSS styles here */
+body{
+    background-image: url("Purple.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  background-size: 100% 100%;
+}
+div.Gears
+{
+    position:absolute;
+    left:430px;
+    top:22px;
+    font-size: 100%;
+    border-width: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgba(100, 64, 119, 0.76);
+    color:rgba(248, 145, 240, 0.925);
+    background-color: rgba(255, 255, 240, 0.295);
+}
+div.image
+{
+    position: absolute;
+    left:80px;
+    top:190px;    
+}
+
+div.sped
+{
+    position: absolute;
+    padding: 10px;
+    color: rgb(226, 109, 255);
+    left:310px;
+    top:40px;
+    font-size: 120%;
+    border: mintcream;
+    border-radius: 10px;
+    background-color: rgba(121, 132, 141, 0.589);
+    border-color: mintcream;
+}
+div.music
+{
+    position: absolute;
+    padding: 15px;
+    left: 520px;
+    top:50px;
+    border-radius: 10px;
+
+}
+div.icon1
+{
+    position: absolute;
+    left:200px;
+    top:675px;
+    border-radius: 100px;
+    padding: 5px;
+    border: rgba(253, 253, 250, 0.685);
+}
