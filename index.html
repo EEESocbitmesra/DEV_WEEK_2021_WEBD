@@ -1,164 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Telsa car dashboard" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--mapbox-->
+    
 
-    <!-- Add stylesheets here (for any purpose, eg: fonts, icons, external stylesheets) -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
-    <!-- Fontawesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Google material icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
-    <title>Tesla car dashboard</title>
+    <title>My Car Dashboard</title>
   </head>
-
   <body>
-    <div>
-      <div>
-        <!-- Side car section -->
-        <aside>
-          <header>
-            <div>
-              <!-- Car gears -->
-              <small>P</small>
-              <small>R</small>
-              <small>N</small>
-              <small>D</small>
-            </div>
-
-            <!-- Car speed -->
-            <div>
-              <span> 20 </span>
-              <small>MPH</small>
-            </div>
-
-            <!-- Battery percentage -->
-            <div>
-              <small>400 km</small>
-              <span class="material-icons"> battery_full </span>
-            </div>
-          </header>
-
-          <!-- Divider -->
-          <div></div>
-
-          <div>
-            <!-- Steering wheel icon here -->
-            <span>30</span>
-            <i class="fas fa-tachometer-alt"></i>
-          </div>
-
-          <!-- Car's image (you may use any other car image also) -->
-          <div>
-            <img src="images/tesla_car.png" alt="tesla_car" />
-          </div>
-
-          <!-- Some random icons -->
-          <div>
-            <i class="fas fa-globe"></i>
-            <span class="material-icons"> bolt </span>
-            <i class="fas fa-microphone"></i>
-          </div>
-        </aside>
-
-        <!-- Music section -->
-        <section>
-          <!-- Music header -->
-          <header>
-            <h1>My Music playlist</h1>
-            <div>
-              <label>
-                <i class="fas fa-plus"></i>
-                <span>Add</span>
-              </label>
-
-              <!-- File upload will be handled using below input tag -->
-              <input type="file" />
-            </div>
-          </header>
-
-          <!-- All the tracks which are uploaded will be displayed here -->
-          <div class="music-tracks"></div>
-
-          <!-- Music player -->
-          <footer>
-            <!-- Audio tag is responsible for the audio playing. Check out audio tag's controls at W3 schools site and MDN docs -->
-            <audio id="audio"></audio>
-
-            <h4>
-              <!-- Name of the track currently being played -->
-            </h4>
-
-            <!-- Controls -->
-            <div>
-              <button id="prev">
-                <span class="material-icons"> skip_previous </span>
-              </button>
-              <button id="play">
-                <span class="material-icons"> play_arrow </span>
-              </button>
-              <button id="next">
-                <span class="material-icons"> skip_next </span>
-              </button>
-            </div>
-
-            <!-- Progress bar container -->
-            <div>
-              <!-- Current time of the track -->
-              <small></small>
-
-              <!-- Progress bar  -->
-              <input type="range" />
-
-              <!-- Duration of the track -->
-              <small></small>
-            </div>
-          </footer>
-        </section>
-
-        <!-- Add map in the given section -->
-        <section></section>
+    <div class="border">
+  <div class="box">
+   <div class="first">
+    <div class="fbox">
+      <div class="head">
+        <small class="time">8:35AM</small>
+        <small>15-07-2021</small>
       </div>
-
-      <!-- Footer -->
-      <footer>
-        <i class="text-3xl fas fa-car"></i>
-
-        <!-- On clicking this button, map section is displayed -->
-        <button>
-          <i class="fas fa-directions"></i>
-        </button>
-
-        <div>
-          <i class="fas fa-fan"></i>
-          <span>MANUAL</span>
-        </div>
-
-        <!-- On clicking this button, music playlist section is displayed -->
-        <button>
-          <i class="fas fa-music"></i>
-        </button>
-
-        <div>
-          <i class="fas fa-angle-up"></i>
-          <i class="fas fa-volume-up"></i>
-          <i class="fas fa-angle-down"></i>
-        </div>
-      </footer>
+      <!-- Car speed -->
+      <div class="speed">
+        80
+      </div>
+      <div class="lower">
+        <!-- Car gears -->
+        
+        <small class="p">P</small>
+        <small class="r">R</small>
+        <small class="n">N</small>
+        <small class="d">D</small>
+        
+        <small class="KMH">KMH</small>
+        <small>400 km</small>
+       </div>
+   </div>
+    <!--fbox ends-->
+    <div class="part2">
+      <div class="top">
+        <span class="material-icons a">power_settings_new</span>
+        <span class="material-icons b">ac_unit</span>
+        <span class="material-icons c"> battery_full </span>
+      </div>
+      <div class="mid">
+        <span class="material-icons phone">call</span>
+        <span class="material-icons as">airline_seat_recline_normal</span>
+        <span class="material-icons lm"> light_mode </span>
+      </div>
+      <div class="bottom">
+        <span class="material-icons lock"> lock </span>
+        <span class="material-icons build">build</span>
+        <span class="material-icons wifi">network_wifi</span>
+      </div>
+     </div>
+     </div>
+     <div class="second">
+      <div id='map' style='width: 550px; height: 310px;'></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXl1c2htYW43NDYiLCJhIjoiY2tyNWN2cHIwMzQxczJvcXA0N291eWExNiJ9.8j_W_DKKAhTHymcHIySvDA';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11'
+        });
+      </script>
+      <div class="controls">
+        <span class="material-icons play">play_arrow</span>
+        <span class="material-icons loc"> map </span>
+        <span class="material-icons vol">volume_up</span> 
+      </div>
+      
+     </div>
     </div>
-
-    <!-- Add script files before closing body tag -->
+  </div>
   </body>
 </html>

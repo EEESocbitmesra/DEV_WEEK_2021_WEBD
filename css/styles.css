@@ -1,1 +1,116 @@
 /* CSS styles here */
+
+.head{
+    height:20px;
+    font-size: 1.80rem;
+}
+.time{
+    padding-right: 138px;
+    width: 50px;;
+}
+.speed{
+    height: 85px;
+    text-align: center;
+    font-size: 6rem;
+    
+}
+.fbox{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(7, 2, 2);
+    margin: 0;
+    height: 150px;
+    background-color:black;
+    color: blue;
+}
+.lower{
+    height: 50px;
+    font-size: 1.8rem;
+    padding-top: 5px;
+}
+.p:hover,.r:hover,.n:hover,.d:hover{
+  cursor: pointer;
+  color: yellow;
+}
+.KMH{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.first{
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 325px;
+  
+}
+.part2{
+    height: 225px;
+    width: 300px;
+    padding: 5px;
+    background-color: black;
+    color: ivory;
+    margin-top:1px ;
+}
+
+.top,.mid,.bottom{
+    padding-left: 5px;
+    padding-top: 5px;
+    height:80px;
+    
+}
+span.material-icons {
+    font-size: 40px;
+    }
+.a,.b,.phone,.as,.lock,.build,.network_wifi{
+    padding-right: 76px;
+}
+.a:hover{
+    cursor:pointer;
+    color: red;
+}
+
+.box{
+    width: 950px;
+    height: 425px;
+    background-color: midnightblue;
+    display:grid;
+    grid-template-columns: 350px 550px;
+    border-style: solid;
+    border-color: mintcream;
+    border-radius:10px;
+    margin: 5px;
+    
+}
+.second{
+    padding-top: 25px;
+}
+.controls{
+    width: 550px;
+    padding-top: 15px;
+    background-color: black;
+    color: ivory;
+    margin-top: 5px;
+    
+}
+.play,.loc{
+    padding-right: 200px;
+}
+.border{
+    background-color: rgb(7, 2, 2);
+    height: 435;
+    padding: 15px;
+    width: 1000px;
+}
+
+.play{
+    padding-left:8px
+   }
+
+
+
+
+
+
+
+
+
+
