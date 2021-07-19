@@ -1,58 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Telsa car dashboard" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Add stylesheets here (for any purpose, eg: fonts, icons, external stylesheets) -->
-
-    <!-- Fontawesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
+    
 
     <!-- Google material icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
     <title>Tesla car dashboard</title>
+    
+  </style>
   </head>
 
   <body>
     <div>
       <div>
-        <!-- Side car section -->
-        <aside>
-          <header>
-            <div>
-              <!-- Car gears -->
-              <small>P</small>
-              <small>R</small>
-              <small>N</small>
-              <small>D</small>
+        <!--------- Side car section -------->
+      <div class="scs">
+            <div class="Gears">
+              <h2>P</h2>
+              <h2>R</h2>
+                <h2>N</h2>
+                <h2>D</h2>
             </div>
-
             <!-- Car speed -->
-            <div>
-              <span> 20 </span>
-              <small>MPH</small>
+            <div class="sped">
+              <h1> 20 </h1>
+              <h2>MPH</h2>
             </div>
 
             <!-- Battery percentage -->
-            <div>
-              <small>400 km</small>
+            <div class="BP">
+              <h2>400 km</h2>
               <span class="material-icons"> battery_full </span>
             </div>
-          </header>
 
           <!-- Divider -->
-          <div></div>
+          <div>
+            </div>
 
           <div>
             <!-- Steering wheel icon here -->
@@ -61,7 +53,7 @@
           </div>
 
           <!-- Car's image (you may use any other car image also) -->
-          <div>
+          <div class="image">
             <img src="images/tesla_car.png" alt="tesla_car" />
           </div>
 
@@ -71,13 +63,14 @@
             <span class="material-icons"> bolt </span>
             <i class="fas fa-microphone"></i>
           </div>
-        </aside>
-
+        </div>
         <!-- Music section -->
+      <div class="music">
         <section>
+          
           <!-- Music header -->
           <header>
-            <h1>My Music playlist</h1>
+            <h1>Music playlist</h1>
             <div>
               <label>
                 <i class="fas fa-plus"></i>
@@ -102,15 +95,14 @@
             </h4>
 
             <!-- Controls -->
-            <div>
-              <button id="prev">
-                <span class="material-icons"> skip_previous </span>
+            <div class="control">
+              <button class="prev" onclick="prev()">
               </button>
-              <button id="play">
-                <span class="material-icons"> play_arrow </span>
+              <button class="play" onclick="play()">
               </button>
-              <button id="next">
-                <span class="material-icons"> skip_next </span>
+              <button class="pause" onclick="pause()">
+                </button>
+              <button class="next" onclick="next()">
               </button>
             </div>
 
@@ -120,13 +112,14 @@
               <small></small>
 
               <!-- Progress bar  -->
-              <input type="range" />
+              <input type="range" min="0" max="100" value="90" onchange="vol_change()">
 
               <!-- Duration of the track -->
               <small></small>
             </div>
           </footer>
         </section>
+        </div>
 
         <!-- Add map in the given section -->
         <section></section>
@@ -137,14 +130,7 @@
         <i class="text-3xl fas fa-car"></i>
 
         <!-- On clicking this button, map section is displayed -->
-        <button>
-          <i class="fas fa-directions"></i>
-        </button>
-
-        <div>
-          <i class="fas fa-fan"></i>
-          <span>MANUAL</span>
-        </div>
+        
 
         <!-- On clicking this button, music playlist section is displayed -->
         <button>
@@ -160,5 +146,16 @@
     </div>
 
     <!-- Add script files before closing body tag -->
+  <div class="icons">
+        <button class="b"><img src="https://img.icons8.com/dotty/80/000000/seat-heater.png"/></button>
+        <button class="b"><img src="https://img.icons8.com/windows/96/000000/settings--v1.png"/></button>
+        <button class="b"><img src="https://img.icons8.com/windows/96/000000/cab-stand.png"/></button>
+        <button class="b"><img src="https://img.icons8.com/windows/96/000000/tabletop-radio.png"/></button>
+        <button class="b"><img src="https://img.icons8.com/ios/100/000000/car--v2.png"/></button>
+        <button class="b"><img src="https://img.icons8.com/ios/100/000000/apple-camera.png"/></button>
+        <button class="b"><img src="https://img.icons8.com/windows/96/000000/apple-music.png"/></button>
+  </div>     
+
+</div>
   </body>
 </html>
