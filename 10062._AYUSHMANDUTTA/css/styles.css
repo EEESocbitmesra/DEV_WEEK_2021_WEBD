@@ -5,7 +5,7 @@
     font-size: 1.80rem;
 }
 .time{
-    padding-right: 138px;
+    padding-right: 130px;
     width: 50px;;
 }
 .speed{
@@ -57,16 +57,18 @@
     height:80px;
     
 }
-span.material-icons {
+a.material-icons {
     font-size: 40px;
-    }
+    color: ivory;
+    cursor: pointer;
+}
+a.material-icons:hover{
+    color: red;
+}
 .a,.b,.phone,.as,.lock,.build,.network_wifi{
     padding-right: 76px;
 }
-.a:hover{
-    cursor:pointer;
-    color: red;
-}
+
 
 .box{
     width: 950px;
@@ -76,8 +78,7 @@ span.material-icons {
     grid-template-columns: 350px 550px;
     border-style: solid;
     border-color: mintcream;
-    border-radius:10px;
-    margin: 5px;
+    border-radius:10px;    margin: 5px;
     
 }
 .second{
@@ -85,15 +86,19 @@ span.material-icons {
 }
 .controls{
     width: 550px;
-    padding-top: 15px;
+    padding-top: 1px;
     background-color: black;
     color: ivory;
     margin-top: 5px;
     
 }
-.play,.loc{
-    padding-right: 200px;
+.car,.loc,.lib,.radio{
+  padding-right: 75px;
 }
+.lib{
+    padding-left: 15px;
+}
+
 .border{
     background-color: rgb(7, 2, 2);
     height: 435;
@@ -104,10 +109,27 @@ span.material-icons {
 .play{
     padding-left:8px
    }
-
-
-
-
+   .music{
+    font-size:x-large;
+    width: 550px; height: 310px;
+    color: blue;
+    background-color: black;
+    text-align:start;
+    font-weight: bolder;
+    }
+.header {
+    padding: 5px;
+    padding-left: 10px;
+}    
+#song{
+    display: none;
+}
+#label{
+    margin-left: 250px;
+    background-color:black;
+    color: blue;
+    font-size: x-large;
+}
 
 
 
