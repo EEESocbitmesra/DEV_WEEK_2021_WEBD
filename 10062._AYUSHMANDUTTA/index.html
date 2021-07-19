@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!--mapbox-->
+    
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>My Car Dashboard</title>
+  </head>
+  <body>
+    <div class="border">
+  <div class="box">
+   <div class="first">
+    <div class="fbox">
+      <div class="head">
+        <small class="time" id="time"></small>
+        <small class="date" id="date"></small>
+      </div>
+      <!-- Car speed -->
+      <div class="speed">
+        80
+      </div>
+      <div class="lower">
+        <!-- Car gears -->
+        
+        <small class="p">P</small>
+        <small class="r">R</small>
+        <small class="n">N</small>
+        <small class="d">D</small>
+        
+        <small class="KMH">KMH</small>
+        <small>400 km</small>
+       </div>
+   </div>
+    <!--fbox ends-->
+    <div class="part2">
+      <div class="top">
+        <a class="material-icons a">power_settings_new</a>
+        <a class="material-icons b">ac_unit</a>
+        <a class="material-icons c"> battery_full </a>
+      </div>
+      <div class="mid">
+        <a class="material-icons phone">call</a>
+        <a class="material-icons as">airline_seat_recline_normal</a>
+        <a class="material-icons lm"> light_mode </a>
+      </div>
+      <div class="bottom">
+        <a class="material-icons lock"> lock </a>
+        <a class="material-icons build">build</a>
+        <a class="material-icons wifi">network_wifi</a>
+      </div>
+     </div>
+     </div>
+     <div class="second">
+       
+      <div id='map' class="tabcontent" style='width: 550px; height: 310px;'>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+      </div>
+      
+        <div class="music tabcontent" id="lib">
+          <div class="header">
+          MUSIC PLAYLIST
+        <label id="label" multiple>+ Add
+        <input type="file" id="song" multiple onchange="myFunction()">
+    
+        </label>
+        <div id="list">
+
+        </div>
+        <audio id="audio" controls src=""></audio>
+        </div>
+      
+          
+        
+      </div>
+      
+      <div class="controls">
+        <a class="material-icons lib " id="play" onclick="switched(event,'lib')">library_music</a>
+        <a class="material-icons loc " id="location" onclick="switched(event,'map')" > map </a>
+        <a class="material-icons car">directions_car</a>
+        <a class="material-icons radio"> radio </a>
+        <a class="material-icons vid">videocam</a> 
+      </div>
+      
+     </div>
+    </div>
+  </div>
+  <script src="script.js">  
+  </script> 
+  </body>
+</html>
